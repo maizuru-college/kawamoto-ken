@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="top.css">
+<style>
+    h2 {
+        font-size: 34px;
+        border-bottom-width: 2px;
+        border-bottom-color: lightgrey;
+        border-bottom-style: solid;
+        margin-bottom: 40px;
+        color: #3b3b3b;
+    }
+
+    p {
+        font-size: 20px;
+        color: #3b3b3b;
+    }
+
+    div {
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    div p {
+        font-size: 16px;
+        color: #3b3b3b;
+    }
+
+    div ul {
+        color: #323232;
+        font-size: 24px;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    div ul li {
+        padding: 5px 0;
+    }
+
+    div h1 {
+        font-size: 34px;
+        color: #3b3b3b;
+    }
+</style>
+<h2>オンライン欠課届へようこそ！</h2>
+<p>オンライン欠課届は欠課届の提出，欠席時間の確認を行うサービスです</p>
+<div>
+    <p>こんな方におススメ</p>
+    <ul>
+        <li>授業はできるだけさぼりたい</li>
+        <li>欠課届を出すのが面倒</li>
+        <li>欠席時間を確認したい</li>
+    </ul>
+    <h1>さぁ始めよう!</h1>
+</div>
+{% endblock %}

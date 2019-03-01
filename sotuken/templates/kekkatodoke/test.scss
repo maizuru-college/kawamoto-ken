@@ -1,0 +1,80 @@
+//colors
+$color_hot_pink_80_approx: rgba(245, 103, 174, 0.8);
+$color_desert_storm_approx: #f8f8f8;
+$gallery: #efefef;
+$color_twilight_blue_approx: azure;
+$color_cape_cod_approx: #414141;
+$color_dove_gray_approx: dimgray;
+$color_mountain_mist_approx: #979696;
+
+.main {
+	width: 100%;
+	height: 150px;
+	margin: 20px;
+	padding: 20px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	background-color: $color_hot_pink_80_approx;
+	position: fixed;
+	h1 {
+		color: $color_desert_storm_approx;
+		font-size: 34px;
+	}
+	p {
+		color: $gallery;
+		font-size: 16px;
+	}
+}
+.wrapper {
+	padding-top: 250px;
+	width: 100%;
+	height: 1800px;
+	background-color: $color_twilight_blue_approx;
+	text-align: center;
+	color: $color_cape_cod_approx;
+	h2 {
+		font-size: 34px;
+		color: $color_dove_gray_approx;
+	}
+	div {
+		text-align: center;
+		width: 100%;
+		height: 400px;
+		padding: 40px;
+		img {
+			margin: auto;
+			padding-right: 80px;
+			height: 400px;
+			width: 400px;
+		}
+		ul {
+			list-style: none;
+			float: right;
+			margin-right: 100px;
+			li {
+				float: left;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				margin: 10px;
+				padding: 10px 20px;
+				background-color: $color_mountain_mist_approx;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 5px;
+				a {
+					margin: auto;
+					color: $gallery;
+					font-size: 20px;
+					line-height: 40px;
+					&:hover {
+						color: $color_desert_storm_approx;
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+	p {
+		font-size: 25px;
+	}
+}

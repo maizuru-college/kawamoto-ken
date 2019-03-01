@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<form action="{% url 'kekkatodoke:new' %}" method="POST">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn">保存</button>
+</form>
+{% endblock %}

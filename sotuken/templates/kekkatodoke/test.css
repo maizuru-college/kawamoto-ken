@@ -1,0 +1,81 @@
+.main {
+  width: 100%;
+  height: 150px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(245, 103, 174, 0.8);
+  position: fixed;
+}
+
+.main h1 {
+  color: #f8f8f8;
+  font-size: 34px;
+}
+
+.main p {
+  color: #efefef;
+  font-size: 16px;
+}
+
+.wrapper {
+  padding-top: 250px;
+  width: 100%;
+  height: 1800px;
+  background-color: azure;
+  text-align: center;
+  color: #414141;
+}
+
+.wrapper h2 {
+  font-size: 34px;
+  color: dimgray;
+}
+
+.wrapper div {
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  padding: 40px;
+}
+
+.wrapper div img {
+  margin: auto;
+  padding-right: 80px;
+  height: 400px;
+  width: 400px;
+}
+
+.wrapper div ul {
+  list-style: none;
+  float: right;
+  margin-right: 100px;
+}
+
+.wrapper div ul li {
+  float: left;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #979696;
+  border-radius: 5px;
+}
+
+.wrapper div ul li a {
+  margin: auto;
+  color: #efefef;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.wrapper div ul li a:hover {
+  color: #f8f8f8;
+  font-size: 30px;
+}
+
+.wrapper p {
+  font-size: 25px;
+}
+/*# sourceMappingURL=test.css.map */
