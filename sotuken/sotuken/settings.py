@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kmizhph#cp_u2gcy&sr5xmq4_gcz4k71mu6rdpi4ba5+v*&-=o'
+SECRET_KEY = 've*pmk08p+xz$5w@_644))9v2&^t+w*f=egxtipj09*87=xfae'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -29,14 +29,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'accounts.apps.AccountsConfig',
-    'kekkatodoke.apps.KekkatodokeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'kekkatodoke',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -50,12 +50,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'sotuken.urls'
-LOGIN_REDIRECT_URL = '/kekkatodoke/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates\kekkatodoke')],
+        'DIRS': [os.path.join(BASE_DIR, 'kekkatodoke\\templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

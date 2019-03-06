@@ -1,0 +1,21 @@
+{% extends 'kekkatodoke/layout.html' %}
+
+{% block content %}
+<table class="detail">
+    <tr>
+        <th>教科</th>
+        <th>日付</th>
+        <th>理由</th>
+    </tr>
+    {%for kekka in kekkas%}
+    <tr>
+        <td>{{kekka.subject}}</td>
+        <td>{{kekka.date}}</td>
+        <td>{{kekka.reason}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}

@@ -1,4 +1,4 @@
-{% extends "../layout.html" %}
+{% extends "kekkatodoke/layout.html" %}
 
 {% block content %}
 
@@ -19,7 +19,7 @@
     {% csrf_token %}
     <table>
         <tr>
-            <td>{{ form.username.label_tag }}</td>
+            <td>学籍番号</td>
             <td>{{ form.username }}</td>
         </tr>
         <tr>
@@ -27,8 +27,7 @@
             <td>{{ form.password }}</td>
         </tr>
     </table>
-
-    <input type="submit" value="login" />
+    <button type="submit" class="btn">login</button>
     <input type="hidden" name="next" value="{{ next }}" />
 </form>
 {% endblock %}

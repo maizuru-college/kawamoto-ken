@@ -1,8 +1,8 @@
 from django.forms import ModelForm
-from .models import Notification
+from .models import Kekka
 
 
-class NoteForm(ModelForm):
+class KekkaForm(ModelForm):
     class Meta:
-        model = Notification
-        fields = ['subject', 'absent_date', 'reason']
+        model = Kekka
+        fields = ['subject', 'student_code', 'date', 'reason']

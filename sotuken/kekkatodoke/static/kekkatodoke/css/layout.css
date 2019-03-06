@@ -1,0 +1,170 @@
+.header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+}
+
+.header div {
+  width: 100%;
+  height: 80px;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header div ul {
+  list-style: none;
+  float: right;
+  margin: 0px 5%;
+}
+
+.header div ul li {
+  height: 80px;
+  width: 120px;
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.header div ul li a {
+  height: 80px;
+  width: 120px;
+  line-height: 80px;
+  text-decoration: none;
+  display: block;
+  margin: 0px;
+  color: #f5f5f5;
+  font-size: 20px;
+}
+
+.header div ul li a:hover {
+  background-color: dimgray;
+}
+
+.userinfo {
+  padding-top: 80px;
+  widows: 100%;
+  background-color: #fafaf7;
+  height: 130px;
+  text-align: right;
+}
+
+.userinfo p {
+  line-height: 50px;
+  font-size: 20px;
+  color: #282828;
+}
+
+.wrapper {
+  height: 1200px;
+  width: 100%;
+  background-color: #fafaf7;
+}
+
+.wrapper .container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper .container h1 {
+  color: #282828;
+  font-size: 40px;
+}
+
+.wrapper .container p {
+  font-size: 20px;
+  color: #282828;
+}
+
+.wrapper .container ul {
+  list-style: none;
+  width: 280px;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.wrapper .container ul li {
+  font-size: 20px;
+  color: #282828;
+  padding: 5px 0px;
+}
+
+.wrapper .container ul li span {
+  font-size: 20px;
+}
+
+table {
+  margin: 0px auto;
+  width: 50%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th, table td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.show, .detail {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.show td, .show th, .detail td, .detail th {
+  border-block-end-color: #444;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.show tr:nth-child(odd), .detail tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.about {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.create {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.create p {
+  padding: 10px 0px 0px 0px;
+  margin: 0px;
+  font-size: 20px;
+  width: 20%;
+}
+
+.create input {
+  font-size: 15px;
+  width: 20%;
+  height: 30px;
+}
+
+.create .reason input {
+  width: 100%;
+  height: 70px;
+}
+
+.btn, .submit {
+  margin: 20px 0px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #333;
+  border: solid 2px #777;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn:hover, .submit:hover {
+  background: #777;
+  color: white;
+}

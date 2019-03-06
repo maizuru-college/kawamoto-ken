@@ -1,0 +1,31 @@
+{% extends 'kekkatodoke/layout.html' %}
+
+{% block content %}
+
+<form action="{% url 'kekkatodoke:new' %}" method="POST">{% csrf_token %}
+    <div class="create">
+        <div class="subject">
+            <p>科目</p>
+            {{ form.subject }}<br>
+        </div>
+        <div class="student_code">
+            <p>学籍番号</p>
+            {{ form.student_code }}<br>
+        </div>
+        <div class="date">
+            <p>日付</p>
+            {{ form.date }}<br>
+        </div>
+        <div class="reason">
+            <p>理由</p>
+            {{ form.reason }}<br>
+        </div>
+    </div>
+
+    <button type="submit" class="btn">保存</button>
+    {% if err %}
+    <p>{{err}}</p>
+    {% endif %}
+
+</form>
+{% endblock %}
