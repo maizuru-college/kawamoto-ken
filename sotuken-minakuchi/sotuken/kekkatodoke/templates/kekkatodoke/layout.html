@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欠課届</title>
+    {% block stylesheet %}
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'kekkatodoke/css/layout.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'kekkatodoke/image/favicon.png' %}">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <ul>
+                <li><a href="{% url 'kekkatodoke:index' %}">トップ</a></li>
+                <li><a href="{% url 'kekkatodoke:about' %}">概要</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'kekkatodoke:show' %}">欠課一覧</a></li>
+                <li><a href="{% url 'kekkatodoke:new' %}">届け出る</a></li>
+                <li><a href="{% url 'logout' %}">ログアウト</a></li>
+                {% else %}
+                <li><a href="{% url 'login' %}">ログイン</a></li>
+                <li><a href="{% url 'accounts:signup' %}">新規登録</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+                <div class="userinfo">
+                        {% if user.is_authenticated %}
+                        <p>{{user.username}}</p>
+                        {% endif %}
+                </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>

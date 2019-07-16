@@ -1,0 +1,24 @@
+{% extends 'kekkatodoke/layout.html' %}
+
+{% block content %}
+
+<table>
+    <tr>
+        <td>教科</td>
+        <td>欠席日数</td>
+    </tr>
+
+    {%for kekka in kekkas%}
+    <tr>
+        {%for data in kekka%}
+        {% if forloop.first %}
+        <td><a href="{% url 'kekkatodoke:detail' data %}">{{data}}</a></td>
+        {% else %}
+        <td>{{data}}</td>
+        {% endif %}
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
