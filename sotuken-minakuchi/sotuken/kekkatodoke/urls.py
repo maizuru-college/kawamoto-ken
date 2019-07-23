@@ -5,7 +5,7 @@ app_name = 'kekkatodoke'
 urlpatterns = [
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
-    path('show/', views.show, name='show'),
-    path('new/', views.new, name='new'),
+    path('look/', views.look, name='look'),
+    path('send/', views.send, name='send'),
     path('detail/<str:subject>/', views.detail, name='detail'),
 ]
