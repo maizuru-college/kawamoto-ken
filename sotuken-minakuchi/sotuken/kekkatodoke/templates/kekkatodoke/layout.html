@@ -21,7 +21,7 @@
                 <li><a href="{% url 'kekkatodoke:about' %}">概要</a></li>
                 {% if user.is_authenticated %}
                 <li><a href="{% url 'kekkatodoke:show' %}">欠課一覧</a></li>
-                <li><a href="{% url 'kekkatodoke:new' %}">届け出る</a></li>
+                <li><a href="{% url 'kekkatodoke:send' %}">届け出る</a></li>
                 <li><a href="{% url 'logout' %}">ログアウト</a></li>
                 {% else %}
                 <li><a href="{% url 'login' %}">ログイン</a></li>

@@ -1,0 +1,388 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>test</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Web_1280___13;
+	}
+	#Web_1280___13 * {
+		margin: 0;
+		padding: 0;
+	}
+	.Web_1280___13_Class {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1280px;
+		height: 800px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Web 1280 – 13;
+		--web-view-id: Web_1280___13;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	.kyoshitsu2_Class {
+		opacity: 1;
+		fill: url(#kyoshitsu2_A0_Rectangle_2_pattern);
+	}
+	.kyoshitsu2 {
+		position: absolute;
+		overflow: visible;
+		width: 1280px;
+		height: 853px;
+		left: 0px;
+		top: -26px;
+	}
+	.SIGN__UP_Class {
+		opacity: 1;
+		position: absolute;
+		left: 395.5px;
+		top: 0.5px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 491px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 101px;
+		color: rgba(243,238,237,1);
+	}
+	.____1_Class {
+		opacity: 1;
+		fill: rgba(132,90,76,0.322);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.____1 {
+		position: absolute;
+		overflow: visible;
+		width: 567px;
+		height: 562px;
+		left: 358px;
+		top: 138px;
+	}
+	.____5_Class {
+		opacity: 1;
+		fill: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.____5 {
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		height: 69px;
+		left: 401px;
+		top: 203px;
+	}
+	.____5_A0_Rectangle_5_Class {
+		opacity: 1;
+		fill: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.____5_A0_Rectangle_5 {
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		height: 71px;
+		left: 401px;
+		top: 492px;
+	}
+	.____5_A0_Rectangle_6_Class {
+		opacity: 1;
+		fill: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.____5_A0_Rectangle_6 {
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		height: 69px;
+		left: 401px;
+		top: 345px;
+	}
+	.____8_Class {
+		opacity: 1;
+		fill: rgba(255,255,255,0.502);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.____8 {
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		height: 48px;
+		left: 584px;
+		top: 642px;
+	}
+	.OK__Class {
+		opacity: 1;
+		position: absolute;
+		left: 615px;
+		top: 652px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 33px;
+		color: rgba(100,98,98,1);
+	}
+	.password_Class {
+		opacity: 1;
+		position: absolute;
+		left: 410.5px;
+		top: 453.5px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 33px;
+		color: rgba(255,255,255,1);
+	}
+	.mailaddress_Class {
+		opacity: 1;
+		position: absolute;
+		left: 415.5px;
+		top: 162.5px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 33px;
+		color: rgba(255,255,255,1);
+	}
+	.username_Class {
+		opacity: 1;
+		position: absolute;
+		left: 410.5px;
+		top: 307.5px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+
+	.form-username{
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		height: 69px;
+		left: 401px;
+		top: 203px;
+		opacity: 1;
+		fill: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.btn{
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		height: 48px;
+		left: 584px;
+		top: 642px;
+		opacity: 1;
+		fill: rgba(255,255,255,0.502);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 33px;
+		color: rgba(100,98,98,1);
+
+	}
+
+	.form-email{
+		position: absolute;
+		overflow: visible;
+		z-index: 10;
+		width: 479px;
+		height: 69px;
+		left: 401px;
+		top: 203px;
+		opacity: 1;
+		fill: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+
+	.form-password1{
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		height: 71px;
+		left: 401px;
+		top: 345px;
+		z-index: 10;
+		opacity: 1;
+		fill: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.form-password2{
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		height: 71px;
+		left: 401px;
+		top: 492px;
+		z-index: 10;
+		opacity: 1;
+		background: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.form{
+		position: absolute;
+		z-index: 10;
+	}
+</style>
+</head>
+<body>
+	<form class="form" method="post">
+		{% csrf_token %}
+				{{ form.username | add_class:"form-username"}}
+				{{ form.email | add_class:"form-email"}}
+				{{ form.password1 | add_class:"form-password1"}}
+				{{ form.password2 | add_class:"form-password2"}}
+		<button type="submit" class="btn">OK</button>
+		{% if form.errors %}
+		{% for field in form %}
+		{% for error in field.errors %}
+		<p>{{ error }}</p>
+		{% endfor %}
+		{% endfor %}
+		{% endif %}
+		{% if err %}
+		<p>{{err}}</p>
+		{% endif %}
+	</form>
+
+	<div id="Web_1280___13" class="Web_1280___13_Class">
+	<img src="{% static 'kekkatodoke/image/sign_up2.png' %}" width="100%" height="100%">
+	<div class="SIGN__UP_Class">
+		<span>SIGN  UP</span>
+	</div>
+	<svg class="____1">
+		<rect class="____1_Class" rx="0" ry="0" x="0" y="0" width="567" height="562">
+		</rect>
+	</svg>
+	<svg class="____5">
+		<rect class="____5_Class" rx="0" ry="0" x="0" y="0" width="479" height="69">
+		</rect>
+	</svg>
+	<svg class="____5_A0_Rectangle_5">
+		<rect class="____5_A0_Rectangle_5_Class" rx="0" ry="0" x="0" y="0" width="479" height="71">
+		</rect>
+	</svg>
+	<svg class="____5_A0_Rectangle_6">
+		<rect class="____5_A0_Rectangle_6_Class" rx="0" ry="0" x="0" y="0" width="479" height="69">
+		</rect>
+	</svg>
+	<svg class="____8">
+		<rect class="____8_Class" rx="0" ry="0" x="0" y="0" width="112" height="48">
+		</rect>
+	</svg>
+	<div class="OK__Class">
+		<span>OK<br/></span>
+	</div>
+	<div class="password_Class">
+		<span>password(確認用)</span>
+	</div>
+	<div class="mailaddress_Class">
+		<span>username</span>
+	</div>
+	<div class="username_Class">
+		<span>password</span>
+	</div>
+</div>
+</body>
+</html>

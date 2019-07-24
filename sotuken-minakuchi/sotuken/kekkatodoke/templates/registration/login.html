@@ -1,35 +1,493 @@
-{% extends "kekkatodoke/index.html" %}
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Web 1280 – 6</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Web_1280___6;
+	}
+	#Web_1280___6 {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1280px;
+		height: 800px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Web 1280 – 6;
+		--web-view-id: Web_1280___6;
+		--web-enable-deep-linking: true;
+	}
+	#page3 {
+		opacity: 1;
+		fill: url(#page3_A4_Rectangle_19_pattern);
+	}
+	.page3 {
+		position: absolute;
+		overflow: visible;
+		width: 1280px;
+		height: 853px;
+		left: 0px;
+		top: -27px;
+	}
+	#KEKKATODOKE {
+		opacity: 1;
+		position: absolute;
+		left: 175px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 932px;
+		height: 158px;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 107px;
+		color: rgba(132,90,76,1);
+	}
+	#____1 {
+		opacity: 1;
+		fill: rgba(132,90,76,0.322);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.____1 {
+		position: absolute;
+		overflow: visible;
+		width: 564px;
+		height: 493px;
+		left: 54px;
+		top: 155px;
+	}
+	#____2 {
+		opacity: 1;
+		fill: rgba(132,90,76,0.322);
+	}
+	.____2 {
+		position: absolute;
+		overflow: visible;
+		width: 639px;
+		height: 86px;
+		left: 712px;
+		top: 149px;
+	}
+	#____3 {
+		opacity: 1;
+		fill: rgba(132,90,76,0.322);
+	}
+	.____3 {
+		position: absolute;
+		overflow: visible;
+		width: 639px;
+		height: 85px;
+		left: 712px;
+		top: 254px;
+	}
+	#______ {
+		opacity: 1;
+		position: absolute;
+		left: 743px;
+		top: 168px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 311px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 59px;
+		color: rgba(255,255,255,1);
+	}
+	#____4 {
+		opacity: 1;
+		fill: rgba(132,90,76,0.322);
+	}
+	.____4 {
+		position: absolute;
+		overflow: visible;
+		width: 639px;
+		height: 85px;
+		left: 712px;
+		top: 358px;
+	}
+	#_______ {
+		opacity: 1;
+		position: absolute;
+		left: 743px;
+		top: 376px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 393px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 59px;
+		color: rgba(255,255,255,1);
+	}
+	#username {
+		opacity: 1;
+		position: absolute;
+		left: 114.5px;
+		top: 269.5px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#password {
+		opacity: 1;
+		position: absolute;
+		left: 114.5px;
+		top: 425.5px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 33px;
+		color: rgba(255,255,255,1);
+	}
+	#____10 {
+		opacity: 1;
+		fill: rgba(132,90,76,0.322);
+	}
+	.____10 {
+		position: absolute;
+		overflow: visible;
+		width: 639px;
+		height: 85px;
+		left: 712px;
+		top: 566px;
+	}
+	#___2 {
+		opacity: 1;
+		fill: rgba(132,90,76,0.322);
+	}
+	.___2 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 462px;
+		left: 712px;
+		width: 639px;
+		height: 85px;
+	}
+	#____ {
+		opacity: 1;
+		position: absolute;
+		left: 743.5px;
+		top: 477.5px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 241px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 60px;
+		color: rgba(255,255,255,1);
+	}
+	#__ {
+		opacity: 1;
+		position: absolute;
+		left: 743px;
+		top: 272px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 119px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 59px;
+		color: rgba(255,255,255,1);
+	}
+	#_____A4_Text_22 {
+		opacity: 1;
+		position: absolute;
+		left: 743px;
+		top: 586px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 225px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 56px;
+		color: rgba(255,255,255,1);
+	}
+	#Login {
+		opacity: 1;
+		position: absolute;
+		left: 252px;
+		top: 187px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 169px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 59px;
+		color: rgba(255,255,255,1);
+	}
+	#__1 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(255, 255, 255);
+		stroke-width: 12px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.__1 {
+		overflow: visible;
+		position: absolute;
+		top: 202.5px;
+		left: 712.5px;
+		width: 663px;
+		height: 12px;
+	}
+	.wrapper{
+		display: block;
+		padding-left: 25px;
+		background: rgba(132,90,76,0.322);
+		stroke-width: 1px;
+		stroke-miterlimit: 4;
+		width: 610px;
+		height: 85px;
+		line-height: 85px;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 59px;
+	}
+	.wrapper:hover{
+		background: rgba(132,90,76,0.8);
+	}
 
-{% block login %}
+	.no-line{
+		text-decoration: none;
+		color:white
+	}
 
-{% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
+	.send-pos{
+		position: absolute;
+		left: 712px;
+		top: 358px;
+	}
 
-{% if next %}
-{% if user.is_authenticated %}
-<p>Your account doesn't have access to this page. To proceed,
-    please login with an account that has access.</p>
-{% else %}
-<p>Please login to see this page.</p>
-{% endif %}
-{% endif %}
+	.look-pos{
+		position: absolute;
+		left: 712px;
+		top: 462px;
+	}
 
-<form method="post" action="{% url 'login' %}">
-    {% csrf_token %}
-    <table>
-        <tr>
-            <td>学籍番号</td>
-            <td>{{ form.username }}</td>
-        </tr>
-        <tr>
-            <td>{{ form.password.label_tag }}</td>
-            <td>{{ form.password }}</td>
-        </tr>
-    </table>
+	.top-pos{
+		position: absolute;
+		left: 712px;
+		top: 168px;
+	}
 
-    <input type="submit" value="login" />
+	.about-pos{
+		position: absolute;
+		left: 712px;
+		top: 264px;
+	}
+
+	.sign_up-pos{
+		position: absolute;
+		left: 712px;
+		top: 566px;
+	}
+
+	.form {
+		z-index: 10;
+		position: absolute;
+	}
+
+	.form-password{
+		opacity: 1;
+		fill: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		height: 105px;
+		left: 114px;
+		top: 462px;
+		font-size: 33px;
+	}
+
+	.form-username{
+		opacity: 1;
+		fill: rgba(198,223,233,0.631);
+		stroke: rgba(255, 255, 255, 0.5);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		height: 105px;
+		left: 114px;
+		top: 306px;
+		font-size: 33px;
+	}
+
+	.btn{
+		opacity: 1;
+		fill: rgba(255,255,255,0.502);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		height: 48px;
+		left: 288px;
+		top: 581px;
+
+		overflow: visible;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 33px;
+		color: rgba(100,98,98,1);
+	}
+
+</style>
+</head>
+
+<body>
+	
+
+<form method="post" action="{% url 'login' %}" class="form">
+		{% if form.errors %}
+		<p>Your username and password didn't match. Please try again.</p>
+		{% endif %}
+		
+		{% if next %}
+		{% if user.is_authenticated %}
+		<p>Your account doesn't have access to this page. To proceed,
+			please login with an account that has access.</p>
+		{% else %}
+		<p>Please login to see this page.</p>
+		{% endif %}
+		{% endif %}
+			{% csrf_token %}
+        
+            <p class="tag" id="username">username</p>
+            {{ form.username|add_class:"form-username"}}
+        
+			<p class="tag" id="password">password</p>
+            {{ form.password | add_class:"form-password"}}
+		</br>
+
+    <button type="submit" class="btn" id="OK">OK</button>
     <input type="hidden" name="next" value="{{ next }}" />
 </form>
 
-{% endblock %}
+<div id="Web_1280___6">
+	<img id="page6" src="{% static 'kekkatodoke/image/top_page2.png' %}" width="100%" height="100%">
+	<div id="KEKKATODOKE">
+		<span>KEKKATODOKE</span>
+	</div>
+
+	<svg class="____1">
+		<rect id="____1" rx="0" ry="0" x="0" y="0" width="564" height="493">
+		</rect>
+	</svg>
+
+		<a href="{% url 'kekkatodoke:index' %}" class="no-line wrapper top-pos">トップページ</a>
+		<a href="{% url 'kekkatodoke:send' %}" class="no-line wrapper send-pos">欠課を届け出る</a>
+
+	<div id="username">
+		<span>username</span>
+	</div>
+	<div id="password">
+		<span>password</span>
+	</div>
+
+	
+		<a href="{% url 'kekkatodoke:look' %}" class="no-line wrapper look-pos">欠課一覧</a>
+		<a href="{% url 'kekkatodoke:about' %}" class="no-line wrapper about-pos">概要</a>
+		<a href="{% url 'accounts:sign_up' %}" class="no-line wrapper sign_up-pos">新規登録</a>
+
+		<div id="Login" >
+		<span>Login</span>
+	</div>
+
+	<svg class="__1">
+		<path id="__1" d="M 0 0 L 651 0">
+		</path>
+	</svg>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="page6.js"></script>
+</body>
+</html>

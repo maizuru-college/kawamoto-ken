@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Web 1280 – 11</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Web_1280___11;
+	}
+	#Web_1280___11 * {
+		margin: 0;
+		padding: 0;
+	}
+	#Web_1280___11 {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1280px;
+		height: 800px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Web 1280 – 11;
+		--web-view-id: Web_1280___11;
+		--web-enable-deep-linking: true;
+	}
+	#TOP4 {
+		opacity: 1;
+		fill: url(#TOP4_A10_Rectangle_49_pattern);
+	}
+	.TOP4 {
+		position: absolute;
+		overflow: visible;
+		width: 1280px;
+		height: 853px;
+		left: 0px;
+		top: -27px;
+	}
+	#SEND {
+		opacity: 1;
+		position: absolute;
+		left: 491.5px;
+		top: 0.5px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 299px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: UD Digi Kyokasho NK-B;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 101px;
+		color: rgba(132,90,76,1);
+	}
+</style>
+</head>
+<body>
+	
+<form action="{% url 'kekkatodoke:new' %}" method="POST">{% csrf_token %}
+		<table>
+			<tr>
+				<td>科目</td>
+				<td>{{ form.subject }}</td>
+			</tr>
+			<tr>
+				<td>学籍番号</td>
+				<td>{{ form.student_code }}</td>
+			</tr>
+			<tr>
+				<td>日付</td>
+				<td>{{ form.date }}</td>
+			</tr>
+			<tr>
+				<td>理由</td>
+				<td>{{ form.reason }}</td>
+			</tr>
+		</table>
+	
+		<button type="submit" class="btn">保存</button>
+		{% if err %}
+		<p>{{err}}</p>
+		{% endif %}
+	
+	</form>
+<div id="Web_1280___11">
+	<img src="{% static 'kekkatodoke/image/send2.png' %}" width="100%" height="100%">
+	<div id="SEND">
+		<span>SEND</span>
+	</div>
+</div>
+</body>
+</html>
